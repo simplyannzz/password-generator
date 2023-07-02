@@ -2,10 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -23,9 +32,58 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
+          <form
+            id="generatepasswordform"
+            class="form"
+          >
+            <div>
+              <label id="length" for=" "> Number of Characters </label>
+              <input
+                type="range"
+                min="8"
+                max="128"
+                value=" 10"
+                id="charactersAmountRange"
+              />
+              <input
+                type="number"
+                min="8"
+                max="128"
+                value="10"
+                id="charactersAmountNumber"
+              />
+            </div>
+            <label for=" "> Include Uppercase </label>
+            <input
+              type="checkbox"
+              id="includeuppercase"
+            />
+            <label for=" "> Include lowercase </label>
+            <input
+              type="checkbox"
+              id="includelowercase"
+            />
+
+            <label for=" "> Include Numbers </label>
+            <input
+              type="checkbox"
+              id="includenumbers"
+            />
+
+            <label for=" "> Include Symbols </label>
+            <input
+              type="checkbox"
+              id="includesymbols"
+            />
+          </form>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button
+            id="generate"
+            class="btn"
+          >
+            Generate Password
+          </button>
         </div>
       </div>
     </div>
