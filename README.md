@@ -1,5 +1,7 @@
 # Password Generator
+
 ## Description
+
 For challenge 3, we are supposed to create a page where we could generate random passwords with different criteria, such as numbers, symbols, and uppercase or lowercase letters that the users could choose to have in this password. I wanted the page to have something where the users could put their inputs of what they want for a password, so I added checkboxes and a range button for the value of letters in the HTML. Then we added the strings and arrays in the Javascript.
 
 ## Table of Contents
@@ -15,8 +17,7 @@ I used the tools that I had on my computer, like Git, Vscode, Github, and Google
 
 ## Usage
 
-![alt text](./assets/pw.png)
-
+![alt text](./assests/pw.png)
 
 ## Credits
 
