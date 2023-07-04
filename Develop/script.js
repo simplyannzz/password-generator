@@ -29,12 +29,13 @@ function generatePassword() {
     },
   ];
   // to see if the checkbox is checked
-  let number = document.getElementById("includenumbers").Checked;
-  let symbols = document.getElementById("includesymbols").Checked;
-  let uppercase = document.getElementById("includeuppercase").Checked;
-  let lowerCase = document.getElementById("includelowercase").Checked;
+  let number = document.getElementById("includenumbers").checked;
+  let symbols = document.getElementById("includesymbols").checked;
+  let uppercase = document.getElementById("includeuppercase").checked;
+  let lowerCase = document.getElementById("includelowercase").checked;
 
-  if (number + symbols + uppercase + lowerCase === 0) {
+console.log (number)
+  if (!number  && !symbols && !uppercase && !lowerCase ) {
     alert(" No box chosen. Please select at least one!");
     return;
   }
@@ -51,11 +52,10 @@ function generatePassword() {
   passwordbox.innerHTML = pw;
 }
 
-
 //not sure what to do here lol
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+//var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
