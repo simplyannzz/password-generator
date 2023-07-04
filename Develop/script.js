@@ -11,31 +11,27 @@ function generatePassword() {
   };
   // to randomly select types
   //const getType = [
-    function uppercaseGen() {
-      return types.uppercase[
-        Math.floor(Math.random() * types.uppercase.length)
-      ];
-    }
-    function lowerCaseGen() {
-      return types.lowerCase[
-        Math.floor(Math.random() * types.lowerCase.length)
-      ];
-    }
-    function numberGen() {
-      return types.numbers[Math.floor(Math.random() * types.numbers.length)];
-    }
-    function symbolsGen() {
-      return types.symbols[Math.floor(Math.random() * types.symbols.length)];
-    }
- // ];
+  function uppercaseGen() {
+    return types.uppercase[Math.floor(Math.random() * types.uppercase.length)];
+  }
+  function lowerCaseGen() {
+    return types.lowerCase[Math.floor(Math.random() * types.lowerCase.length)];
+  }
+  function numberGen() {
+    return types.numbers[Math.floor(Math.random() * types.numbers.length)];
+  }
+  function symbolsGen() {
+    return types.symbols[Math.floor(Math.random() * types.symbols.length)];
+  }
+  // ];
   // to see if the checkbox is checked
   let number = document.getElementById("includenumbers").checked;
   let symbols = document.getElementById("includesymbols").checked;
   let uppercase = document.getElementById("includeuppercase").checked;
   let lowerCase = document.getElementById("includelowercase").checked;
 
-console.log (number)
-  if (!number  && !symbols && !uppercase && !lowerCase ) {
+  console.log(number);
+  if (!number && !symbols && !uppercase && !lowerCase) {
     alert(" No box chosen. Please select at least one!");
     return;
   }
@@ -48,22 +44,21 @@ console.log (number)
     // if (isChecked) {
     //   pw += typeAdder();
     // }
-    if(pw.length<length && number){
-      pw += numberGen()
+    if (pw.length < length && number) {
+      pw += numberGen();
     }
-    if(pw.length<length && uppercase){
-      pw += uppercaseGen()
+    if (pw.length < length && uppercase) {
+      pw += uppercaseGen();
     }
-    if(pw.length<length && lowerCase){
-      pw += lowerCaseGen()
+    if (pw.length < length && lowerCase) {
+      pw += lowerCaseGen();
     }
-    if(pw.length<length && symbols){
-      pw += symbolsGen()
+    if (pw.length < length && symbols) {
+      pw += symbolsGen();
     }
-
   }
-  console.log(pw,length)
- return pw;
+  console.log(pw, length);
+  return pw;
 }
 
 //not sure what to do here lol

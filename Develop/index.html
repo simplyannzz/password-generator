@@ -25,19 +25,17 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-          <form
+        <form
             id="generatepasswordform"
             class="form"
           >
             <div>
-              <label id="length" for=" "> Number of Characters </label>
+              <label
+                id="length"
+                for=" "
+              >
+                Number of Characters
+              </label>
               <input
                 type="range"
                 min="8"
@@ -76,6 +74,13 @@
               id="includesymbols"
             />
           </form>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
         </div>
         <div class="card-footer">
           <button
